@@ -25,7 +25,7 @@ hpc <- cbind(DateTime,hpc)
 #Make measurement values numeric
 hpc[,4:9] <- as.numeric(unlist(hpc[,4:9]))
 
-#Plot histogram of Global Active Power and save to png file
+#Plot scatterplot of Global Active Power over time and save to png file
 xmed <- median(hpc$DateTime)
 xmax <- max(hpc$DateTime)
 xmin <- min(hpc$DateTime)
